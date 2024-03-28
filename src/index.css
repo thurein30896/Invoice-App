@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    counter-reset: my-sec-counter;
+  }
+  
+  .row-no::before {
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter);
+  }
